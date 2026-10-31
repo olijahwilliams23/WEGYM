@@ -521,3 +521,8 @@ footer {
 .exercise-iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; }
 .video-credit { font-size: .75rem; opacity: .8; }
 .video-search-link, .video-source-link { display: inline-block; margin-top: .5rem; color: #f26b7e; font-size: .9rem; }
+
+/* Pilates additions: always-available local thumbnail until a video is verified */
+.pilates-video-placeholder {display:block;max-width:520px;margin-top:1rem;color:inherit;text-decoration:none;}
+.pilates-video-placeholder img {width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:10px;}
+.pilates-video-placeholder span {display:block;margin-top:.45rem;text-decoration:underline;}

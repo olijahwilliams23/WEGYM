@@ -4,7 +4,7 @@ This build preserves the previous WEGYM functionality. Video candidates are link
 
 **Important:** A source search match does not prove the video is 5 minutes or shorter or embeddable. Check each candidate in the live browser before claiming it meets the requirement.
 
-New style exercise entries reviewed: 50; video candidates added: 4; awaiting curation: 46.
+New style exercise entries reviewed: 50; video candidates added: 5; awaiting curation: 45.
 
 | Training style | Exercise | Status | YouTube ID |
 |---|---|---|---|
@@ -16,7 +16,7 @@ New style exercise entries reviewed: 50; video candidates added: 4; awaiting cur
 | calisthenics | Reverse Lunge | needs curation |  |
 | calisthenics | Bear Crawl | needs curation |  |
 | pilates | The Hundred | candidate embed | UaqpuUzs1i8 |
-| pilates | Glute Bridge | needs curation |  |
+| pilates | Glute Bridge | candidate embed (60-second tutorial title; unverified live) | E2zKYWNKPkA |
 | pilates | Bird Dog | needs curation |  |
 | pilates | Single-Leg Stretch | needs curation |  |
 | pilates | Clamshell | needs curation |  |
