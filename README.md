@@ -45,3 +45,23 @@ Cloud sync requires your own **free Supabase project** and is not active until c
 ## GitHub Pages deployment and testing
 A GitHub Actions workflow is included at `.github/workflows/deploy.yml`.
 See `TESTING-AND-DEPLOYMENT.md` for exact steps, test cases, limitations, and the checklist for going live.
+
+
+## Account pages and thumbnail updates
+- Sign in: `login.html`; sign up: `signup.html`. Both use the existing Supabase configuration.
+- The Workout Videos page now displays cloud status instead of an inline password form.
+- Video cards load YouTube thumbnails and fall back to a local preview image if the image URL fails. This does **not** verify that each external YouTube video still exists.
+- To activate accounts, complete the existing Supabase setup and configure Auth URL redirects to your deployed website.
+- Advertising: no ad scripts have been installed. Apply for an ad network only after the site has substantial original content, required disclosures, and approval.
+
+
+## Training styles and nutrition calculator (2026-10-31)
+- `workout-videos.html` is now a training style hub.
+- `bodybuilding.html` retains the existing workout videos, search, logging, prestige and cloud controls.
+- Separate beginner guide pages: calisthenics, Pilates, plyometrics, cardio/endurance, isometrics, yoga and strength training. These are **written guides**, not yet curated video libraries.
+- `nutrition-calculator.html` offers three fitness goals, three training volumes, weight units, protein/carbohydrate estimates and optional creatine guidance.
+- No secrets or new backend requirements added. Existing Supabase setup remains required for cloud accounts.
+- Verify mobile navigation, browser storage and Supabase separately after deployment.
+
+## Training style body-part filters
+Each of the seven non-bodybuilding training pages has a body-part filter. The filtering code lives in `js/training-filters.js`, and each exercise card uses a comma-separated `data-parts` attribute. Multiple body parts per exercise are supported. Bodybuilding retains its existing muscle-group filters. New written exercises do not imply that verified video demonstrations are available.

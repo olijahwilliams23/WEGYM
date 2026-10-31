@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WEGYM | Nutrition Calculator</title><link rel="stylesheet" href="css/style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"></head><body><nav class="navbar">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">W</div>
+      <div>
+        <h1>WEGYM</h1>
+        <p>Fitness Hub</p>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="workout-videos.html">Workout Videos</a></li>
+      <li><a href="workout-plans.html">Workout Plans</a></li>
+      <li><a href="diets.html">Diets</a></li><li><a href="nutrition-calculator.html">Calculator</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="supplements.html">Supplements</a></li>
+      <li class="account-nav"><a href="login.html">Sign in</a></li>
+      <li class="account-nav account-join"><a href="signup.html">Sign up</a></li>
+    </ul>
+  </nav><header class="page-hero"><p class="eyebrow">WEGYM tools</p><h2>NUTRITION CALCULATOR</h2><p>Estimate daily protein and carbohydrates from body weight, fitness goal, and training volume.</p></header><main class="training-container"><section class="nutrition-form"><div class="nutrition-field"><label for="bodyWeight">Body weight</label><input id="bodyWeight" type="number" min="1" max="1100" value="180" step="0.1"><select id="weightUnit" aria-label="Weight unit"><option value="lb">Pounds (lb)</option><option value="kg">Kilograms (kg)</option></select></div><fieldset><legend>Choose your fitness goal</legend><label><input type="radio" name="fitnessGoal" value="muscle" checked> Build muscle</label><label><input type="radio" name="fitnessGoal" value="fat"> Lose fat / maintain muscle</label><label><input type="radio" name="fitnessGoal" value="general"> General fitness</label></fieldset><fieldset><legend>Choose your training volume</legend><label><input type="radio" name="trainingVolume" value="light"> Light — occasional or short workouts</label><label><input type="radio" name="trainingVolume" value="moderate" checked> Moderate — regular workouts</label><label><input type="radio" name="trainingVolume" value="high"> High — frequent, demanding workouts</label></fieldset><div id="nutritionResults" aria-live="polite"><div class="nutrition-results"><div><span>Daily protein</span><strong id="proteinResult">—</strong></div><div><span>Daily carbohydrates</span><strong id="carbResult">—</strong></div><div><span>Creatine monohydrate (optional)</span><strong>3–5 g/day</strong></div></div><p id="nutritionMessage"></p></div><p class="training-disclaimer">These are broad starting estimates for healthy adults, not medical prescriptions. Carbohydrate needs depend on training duration and energy intake. Creatine is optional; people with kidney disease, who are pregnant, or who have other medical concerns should consult a qualified clinician before supplement use. This tool is not designed for children.</p></section></main><footer><p>© 2026 WEGYM. Built with HTML, CSS, and JavaScript.</p></footer><script src="js/script.js"></script><script src="js/nutrition.js"></script></body></html>

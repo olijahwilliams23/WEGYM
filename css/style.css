@@ -477,3 +477,47 @@ footer {
 .cloud-auth input{width:100%;padding:12px;background:#101010;color:white;border:1px solid #666;border-radius:8px;font:inherit}
 .cloud-panel button{padding:12px;border:1px solid #d44343;background:#292929;color:white;border-radius:8px;cursor:pointer;margin:4px 8px 4px 0;font:inherit}
 .cloud-panel button:hover{background:#444}.cloud-panel [hidden]{display:none!important}
+
+/* WEGYM account navigation and dedicated authentication */
+.account-nav a{display:inline-block;border:1px solid #ed334d;border-radius:8px;padding:9px 13px!important;white-space:nowrap}
+.account-join a{background:#ed334d;color:white!important}
+.auth-page{min-height:65vh;display:flex;align-items:center;justify-content:center;padding:48px 16px}
+.auth-card{width:min(100%,460px);padding:30px;border:1px solid #44434c;border-radius:16px;background:#1a191d;color:white}
+.auth-card h2{font-family:Anton, sans-serif;font-size:2.5rem;letter-spacing:.03em;margin:8px 0}
+.auth-card p{color:#ddd}
+.auth-card #cloudStatus{font-size:.9rem;min-height:20px;color:#f3a4af}
+.auth-card form{display:flex;flex-direction:column;gap:10px}
+.auth-card label{font-weight:600}
+.auth-card input{padding:13px;background:#101012;color:white;border:1px solid #6d6b72;border-radius:8px;font:inherit;width:100%}
+.auth-card form button{padding:13px;background:#ee3450;border:0;border-radius:8px;color:white;font:inherit;font-weight:700;cursor:pointer;margin-top:12px}
+.auth-alternative{margin:20px 0}.auth-alternative a,.auth-return{color:#ff8193}
+.cloud-compact{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.cloud-compact .cloud-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cloud-compact .cloud-actions a{color:white;background:#ed334d;padding:11px 17px;border-radius:8px;text-decoration:none}
+.cloud-compact [hidden]{display:none!important}
+.video-link img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#222126;border-radius:8px}
+@media(max-width:850px){.account-nav{margin-top:8px}.account-nav a{width:100%;text-align:center}}
+
+/* WEGYM training style hub and nutrition calculator */
+.training-container{max-width:1120px;margin:0 auto;padding:38px 20px 75px}.training-container>h2{margin:24px 0 12px}.training-container>p{margin:10px 0 24px;color:#ccc}.training-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}.training-tile{min-height:178px;border:1px solid #414147;background:#18181c;border-radius:14px;padding:23px;display:flex;flex-direction:column;gap:12px;color:#e8e8ea;text-decoration:none;transition:border-color .2s,transform .2s}.training-tile:hover,.training-tile:focus-visible{border-color:#f03552;transform:translateY(-3px)}.training-tile-label{font-size:1.35rem;font-weight:700;color:#fff}.tile-open{margin-top:auto;color:#ff526a;font-weight:700}.training-exercises{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px}.training-exercise{padding:22px;background:#18181c;border:1px solid #444;border-radius:12px}.training-exercise h3{margin:12px 0;color:white}.training-exercise p{margin:8px 0;color:#ddd}.back-link{color:#ff526a}.training-disclaimer{font-size:.9rem;color:#bbb;line-height:1.65;margin-top:24px}.nutrition-form{max-width:760px;margin:0 auto;background:#18181c;border:1px solid #48484d;padding:clamp(18px,4vw,36px);border-radius:14px}.nutrition-field{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:24px}.nutrition-field label{flex-basis:100%;font-weight:700}.nutrition-field input,.nutrition-field select{padding:12px;background:#0d0d0f;color:white;border:1px solid #666;border-radius:8px;min-width:0}.nutrition-field input{flex:1 1 160px}.nutrition-form fieldset{border:1px solid #48484d;border-radius:10px;padding:18px;margin-bottom:22px}.nutrition-form legend{font-weight:700;padding:0 8px}.nutrition-form fieldset label{display:block;margin:12px 0;cursor:pointer}.nutrition-form input[type=radio]{accent-color:#f03552;margin-right:9px}.nutrition-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.nutrition-results>div{border:1px solid #45454b;border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px}.nutrition-results span{font-size:.85rem;color:#bbb}.nutrition-results strong{font-size:1.45rem;color:white}#nutritionMessage{margin:16px 0;color:#ddd}@media(max-width:600px){.training-tiles{grid-template-columns:1fr}.nutrition-form{padding:18px}.training-container{padding:24px 14px 50px}}
+
+/* Body-part organization across training styles */
+.exercise-filter-panel{margin:20px 0 28px;padding:18px;background:#19191e;border:1px solid #45454d;border-radius:14px}
+.exercise-filter-panel h3{color:#fff;margin:0 0 6px;font-size:1.15rem}
+.exercise-filter-panel p{color:#bdbdc4;margin:0 0 14px;font-size:.9rem}
+.body-filter-buttons{display:flex;gap:9px;flex-wrap:wrap}
+.body-filter-btn{border:1px solid #5b5b63;background:#25252a;color:#f5f5f5;border-radius:999px;padding:10px 16px;cursor:pointer;font:inherit;font-size:.9rem;min-height:44px}
+.body-filter-btn:hover,.body-filter-btn:focus-visible{border-color:#ff536d;outline-offset:2px}
+.body-filter-btn.active{background:#d9304c;border-color:#d9304c;color:#fff;font-weight:700}
+.training-exercise[hidden],.exercise-no-results[hidden]{display:none!important}
+.exercise-no-results{color:#ddd;padding:22px;text-align:center}
+@media(max-width:600px){.body-filter-buttons{gap:7px}.body-filter-btn{padding:9px 12px;font-size:.85rem}}
+
+/* Video tutorial candidates and responsive player */
+.exercise-video-box { margin-top: 1rem; display: grid; gap: .5rem; }
+.video-load-button { border: 0; padding: 0; cursor: pointer; background: #16161a; color: white; position: relative; display: block; width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px; }
+.video-load-button img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-play-label { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); padding: .65rem 1rem; border-radius: 8px; background: rgba(0,0,0,.83); color: white; font-weight: 700; white-space: nowrap; }
+.exercise-iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; }
+.video-credit { font-size: .75rem; opacity: .8; }
+.video-search-link, .video-source-link { display: inline-block; margin-top: .5rem; color: #f26b7e; font-size: .9rem; }

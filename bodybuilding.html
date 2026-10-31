@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WEGYM | Bodybuilding Videos</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar">
+<a class="logo" href="index.html">
+<div class="logo-icon">W</div>
+<div>
+<h1>WEGYM</h1>
+<p>Fitness Hub</p>
+</div>
+</a>
+<button aria-label="Open navigation" class="menu-btn" id="menuBtn">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="workout-videos.html">Training Styles</a></li><li><a class="active" href="bodybuilding.html">Bodybuilding</a></li>
+<li><a href="workout-plans.html">Workout Plans</a></li>
+<li><a href="diets.html">Diets</a></li><li><a href="nutrition-calculator.html">Calculator</a></li>
+<li><a href="equipment.html">Equipment</a></li>
+<li><a href="supplements.html">Supplements</a></li>
+<li class="account-nav"><a href="login.html">Sign in</a></li>
+<li class="account-nav account-join"><a href="signup.html">Sign up</a></li>
+</ul>
+</nav>
+<header class="page-hero">
+<p class="eyebrow">Bodybuilding Video Library</p>
+<h2>BODYBUILDING EXERCISES</h2>
+<p>
+      Each workout video has an ID. The ID helps keep the workout library organized as WEGYM grows.
+    </p>
+</header>
+<main>
+<div class="filter-buttons">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="chest">Chest</button>
+<button class="filter-btn" data-filter="arms">Arms</button>
+<button class="filter-btn" data-filter="back">Back</button>
+<button class="filter-btn" data-filter="legs">Legs</button>
+<button class="filter-btn" data-filter="abs">Abs</button>
+<button class="filter-btn" data-filter="shoulders">Shoulders</button>
+</div>
+<section aria-label="Workout tools" class="tracker-toolbar">
+<label for="workoutSearch">Search workouts</label>
+<input autocomplete="off" id="workoutSearch" placeholder="Search by exercise or muscle group..." type="search"/>
+<p aria-live="polite" id="workoutProgress">0 workouts logged today</p>
+<button id="clearProgress" type="button">Reset progress</button>
+</section>
+<section aria-label="Cloud synchronization" class="cloud-panel cloud-compact">
+<div><h3>Cloud workout progress</h3><p id="cloudStatus" role="status">Checking cloud setup...</p></div>
+<div class="cloud-actions"><a href="login.html" id="cloudLoginLink">Sign in</a><button hidden="" id="signOut" type="button">Sign out</button><button hidden="" id="importProgress" type="button">Import old browser progress</button></div>
+</section>
+<section aria-label="WEGYM prestige rankings" class="prestige-panel">
+<div class="prestige-heading"><div><p class="prestige-kicker">WEGYM PRESTIGE</p><h3 id="prestigeRank">Rookie</h3><p id="prestigeDetail">Log 3 workouts on different days in a week to earn a qualifying week.</p></div><div aria-hidden="true" class="prestige-emblem" id="prestigeEmblem">◆</div></div>
+<div aria-label="Rank progress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="prestige-bar" id="prestigeBar" role="progressbar"><div id="prestigeFill"></div></div>
+<p aria-live="polite" id="prestigeNext">Loading rank...</p><p id="prestigeWeekly">This week: 0/3 workout days</p>
+<div class="prestige-tiers" id="prestigeTiers"></div>
+<p class="prestige-note">Ranks reward consistency, not strength or medical fitness. A qualifying week needs workouts on 3 different days. Sign in to sync your prestige across devices. Without an account, progress stays on this browser.</p>
+</section>
+<p class="hidden" id="noWorkoutResults" role="status">No workouts match your search.</p>
+<section class="workout-grid">
+<!-- CHEST VIDEOS -->
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-001</span>
+<span class="body-tag">Chest</span>
+<h3>Cable Flies</h3>
+<p>Chest isolation exercise. Good for squeezing the chest and learning control.</p>
+<a class="video-link" href="https://youtube.com/shorts/R2ANv-6JG3A" rel="noopener noreferrer" target="_blank">
+<img alt="Cable Flies thumbnail" data-video-id="R2ANv-6JG3A" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/R2ANv-6JG3A/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-002</span>
+<span class="body-tag">Chest</span>
+<h3>Bench Press</h3>
+<p>Main chest strength movement using a barbell.</p>
+<a class="video-link" href="https://www.youtube.com/watch?v=EsTu2NVM1EI" rel="noopener noreferrer" target="_blank">
+<img alt="Bench Press thumbnail" data-video-id="EsTu2NVM1EI" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/EsTu2NVM1EI/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-003</span>
+<span class="body-tag">Chest</span>
+<h3>Incline Bench Press</h3>
+<p>Upper chest press using an incline bench.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/98HWfiRonkE" rel="noopener noreferrer" target="_blank">
+<img alt="Incline Bench Press thumbnail" data-video-id="98HWfiRonkE" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/98HWfiRonkE/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-004</span>
+<span class="body-tag">Chest</span>
+<h3>Dumbbell Bench Press</h3>
+<p>Chest press using dumbbells for better range of motion.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/1V3vpcaxRYQ" rel="noopener noreferrer" target="_blank">
+<img alt="Dumbbell Bench Press thumbnail" data-video-id="1V3vpcaxRYQ" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/1V3vpcaxRYQ/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-005</span>
+<span class="body-tag">Chest</span>
+<h3>Incline Dumbbell Bench Press</h3>
+<p>Upper chest dumbbell press movement.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/8fXfwG4ftaQ" rel="noopener noreferrer" target="_blank">
+<img alt="Incline Dumbbell Bench Press thumbnail" data-video-id="8fXfwG4ftaQ" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/8fXfwG4ftaQ/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-006</span>
+<span class="body-tag">Chest</span>
+<h3>Incline Dumbbell Flys</h3>
+<p>Upper chest fly movement using dumbbells.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/ozAhti8BK6s" rel="noopener noreferrer" target="_blank">
+<img alt="Incline Dumbbell Flys thumbnail" data-video-id="ozAhti8BK6s" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/ozAhti8BK6s/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-007</span>
+<span class="body-tag">Chest</span>
+<h3>Machine Chest Fly</h3>
+<p>Chest fly using a machine for controlled form.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/XZg28DIf1oc" rel="noopener noreferrer" target="_blank">
+<img alt="Machine Chest Fly thumbnail" data-video-id="XZg28DIf1oc" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/XZg28DIf1oc/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-008</span>
+<span class="body-tag">Chest</span>
+<h3>Incline Machine Press</h3>
+<p>Machine press focused on the upper chest.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/-QRu-lMwh4k" rel="noopener noreferrer" target="_blank">
+<img alt="Incline Machine Press thumbnail" data-video-id="-QRu-lMwh4k" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/-QRu-lMwh4k/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-009</span>
+<span class="body-tag">Chest</span>
+<h3>Decline Machine Press</h3>
+<p>Lower chest press using a decline machine.</p>
+<a class="video-link" href="https://www.youtube.com/watch?v=mWkZ76tLk" rel="noopener noreferrer" target="_blank">
+<img alt="Decline Machine Press thumbnail" data-video-id="mWkZ76tLk" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/mWkZ76tLk/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="chest">
+<span class="workout-id">WVID-010</span>
+<span class="body-tag">Chest</span>
+<h3>Dips Chest Variation</h3>
+<p>Dips variation that leans forward to target the chest more.</p>
+<a class="video-link" href="https://www.youtube.com/watch?v=4la6BkUBLgo" rel="noopener noreferrer" target="_blank">
+<img alt="Dips Chest Variation thumbnail" data-video-id="4la6BkUBLgo" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/4la6BkUBLgo/hqdefault.jpg"/>
+</a>
+</article>
+<!-- ARMS VIDEOS -->
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-011</span>
+<span class="body-tag">Arms</span>
+<h3>Hammer Curls</h3>
+<p>Biceps and forearm exercise using a neutral grip.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/e6poFcCgMrY" rel="noopener noreferrer" target="_blank">
+<img alt="Hammer Curls thumbnail" data-video-id="e6poFcCgMrY" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/e6poFcCgMrY/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-012</span>
+<span class="body-tag">Arms</span>
+<h3>Barbell Curls</h3>
+<p>Classic biceps movement using a barbell.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/GL0zYxB7qZw" rel="noopener noreferrer" target="_blank">
+<img alt="Barbell Curls thumbnail" data-video-id="GL0zYxB7qZw" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/GL0zYxB7qZw/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-013</span>
+<span class="body-tag">Arms</span>
+<h3>Incline Curls</h3>
+<p>Biceps curl variation that stretches the biceps more.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/L9nnbFzdl3Y" rel="noopener noreferrer" target="_blank">
+<img alt="Incline Curls thumbnail" data-video-id="L9nnbFzdl3Y" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/L9nnbFzdl3Y/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-014</span>
+<span class="body-tag">Arms</span>
+<h3>Concentration Curls</h3>
+<p>Biceps isolation curl for control and squeeze.</p>
+<a class="video-link" href="https://www.youtube.com/watch?v=VMbDQ8PZazY" rel="noopener noreferrer" target="_blank">
+<img alt="Concentration Curls thumbnail" data-video-id="VMbDQ8PZazY" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/VMbDQ8PZazY/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-015</span>
+<span class="body-tag">Arms</span>
+<h3>Spider Curls</h3>
+<p>Biceps curl variation that keeps the arms locked in position.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/w5xTuSvjVG0" rel="noopener noreferrer" target="_blank">
+<img alt="Spider Curls thumbnail" data-video-id="w5xTuSvjVG0" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/w5xTuSvjVG0/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-016</span>
+<span class="body-tag">Arms</span>
+<h3>Overhead Dumbbell Tricep Extension</h3>
+<p>Triceps movement that targets the long head of the triceps.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/b_r_LW4HEcM" rel="noopener noreferrer" target="_blank">
+<img alt="Overhead Dumbbell Tricep Extension thumbnail" data-video-id="b_r_LW4HEcM" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/b_r_LW4HEcM/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-017</span>
+<span class="body-tag">Arms</span>
+<h3>Tricep Pushdown</h3>
+<p>Cable triceps exercise for building the back of the arms.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/Rc7-euA8FDI" rel="noopener noreferrer" target="_blank">
+<img alt="Tricep Pushdown thumbnail" data-video-id="Rc7-euA8FDI" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/Rc7-euA8FDI/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-018</span>
+<span class="body-tag">Arms</span>
+<h3>Dips</h3>
+<p>Bodyweight movement that can train triceps, chest, and shoulders.</p>
+<a class="video-link" href="https://www.youtube.com/watch?v=WNMqN2O2MSs" rel="noopener noreferrer" target="_blank">
+<img alt="Dips thumbnail" data-video-id="WNMqN2O2MSs" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/WNMqN2O2MSs/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-019</span>
+<span class="body-tag">Arms</span>
+<h3>EZ Bar Skull Crusher</h3>
+<p>Triceps isolation exercise using an EZ bar.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/ZY7HEE_A-ns" rel="noopener noreferrer" target="_blank">
+<img alt="EZ Bar Skull Crusher thumbnail" data-video-id="ZY7HEE_A-ns" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/ZY7HEE_A-ns/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-020</span>
+<span class="body-tag">Arms</span>
+<h3>Dumbbell Skull Crusher</h3>
+<p>Triceps isolation movement using dumbbells.</p>
+<a class="video-link" href="https://www.youtube.com/watch?v=ir5PsbniVSc" rel="noopener noreferrer" target="_blank">
+<img alt="Dumbbell Skull Crusher thumbnail" data-video-id="ir5PsbniVSc" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/ir5PsbniVSc/hqdefault.jpg"/>
+</a>
+</article>
+<article class="workout-video-card" data-bodypart="arms">
+<span class="workout-id">WVID-021</span>
+<span class="body-tag">Arms</span>
+<h3>Tricep French Press</h3>
+<p>Overhead triceps press movement for arm growth.</p>
+<a class="video-link" href="https://www.youtube.com/shorts/EP528Q4LjY8" rel="noopener noreferrer" target="_blank">
+<img alt="Tricep French Press thumbnail" data-video-id="EP528Q4LjY8" loading="lazy" onerror="this.onerror=null;this.src='images/video-fallback.svg'" src="https://i.ytimg.com/vi/EP528Q4LjY8/hqdefault.jpg"/>
+</a>
+</article>
+<!-- PLACEHOLDERS FOR NEXT BODY PARTS -->
+<article class="workout-video-card" data-bodypart="back">
+<span class="workout-id">WVID-022</span>
+<span class="body-tag">Back</span>
+<h3>Back Strength Basics</h3>
+<p>Rows, lat pulldowns, assisted pull-ups, and back thickness basics.</p>
+<div class="video-placeholder">Video Coming Soon</div>
+</article>
+<article class="workout-video-card" data-bodypart="legs">
+<span class="workout-id">WVID-023</span>
+<span class="body-tag">Legs</span>
+<h3>Leg Day Basics</h3>
+<p>Squats, leg press, hamstring curls, calf raises, and lunges.</p>
+<div class="video-placeholder">Video Coming Soon</div>
+</article>
+<article class="workout-video-card" data-bodypart="abs">
+<span class="workout-id">WVID-024</span>
+<span class="body-tag">Abs</span>
+<h3>Core and Abs Basics</h3>
+<p>Crunches, planks, leg raises, Russian twists, and core stability.</p>
+<div class="video-placeholder">Video Coming Soon</div>
+</article>
+<article class="workout-video-card" data-bodypart="shoulders">
+<span class="workout-id">WVID-025</span>
+<span class="body-tag">Shoulders</span>
+<h3>Shoulder Builder Basics</h3>
+<p>Shoulder press, lateral raises, rear delts, front raises, and traps.</p>
+<div class="video-placeholder">Video Coming Soon</div>
+</article>
+</section>
+</main>
+<footer>
+<p>© 2026 WEGYM. Built with HTML, CSS, and JavaScript.</p>
+</footer>
+<script defer="" src="js/thumbnails.js"></script>
+<script src="js/script.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/cloud.js" type="module"></script>
+</body>
+</html>

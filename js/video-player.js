@@ -1,0 +1,15 @@
+document.addEventListener('click', function(event) {
+  const button = event.target.closest('.video-load-button');
+  if (!button) return;
+  const id = button.dataset.videoId;
+  if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+  iframe.title = button.getAttribute('aria-label') || 'Exercise tutorial';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  iframe.allowFullscreen = true;
+  iframe.loading = 'lazy';
+  iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+  iframe.className = 'exercise-iframe';
+  button.replaceWith(iframe);
+});

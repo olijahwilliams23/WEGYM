@@ -4,7 +4,6 @@ const status = document.getElementById('cloudStatus');
 const form = document.getElementById('authForm');
 const email = document.getElementById('authEmail');
 const password = document.getElementById('authPassword');
-const signup = document.getElementById('signUp');
 const signout = document.getElementById('signOut');
 const migrate = document.getElementById('importProgress');
 const enabled = Boolean(config.url && config.anonKey);
@@ -15,6 +14,8 @@ const setStatus = message => { if (status) status.textContent = message; };
 const localEntries = () => window.WEGYM_PROGRESS?.getLog() || [];
 const setControls = () => {
   if (form) form.hidden = Boolean(user);
+  const loginLink = document.getElementById('cloudLoginLink');
+  if (loginLink) loginLink.hidden = Boolean(user);
   if (signout) signout.hidden = !user;
   if (migrate) migrate.hidden = !user;
 };
@@ -25,7 +26,7 @@ async function syncFromCloud() {
   try {
     const {data,error} = await client.from('workout_logs').select('workout_id,workout_date').eq('user_id',user.id);
     if (error) throw error;
-    window.WEGYM_PROGRESS.setLog(normalize(data || []));
+    window.WEGYM_PROGRESS?.setLog(normalize(data || []));
     setStatus(`Signed in as ${user.email}. Progress synced to cloud.`);
   } catch(e) { setStatus(`Sync failed: ${e.message}`); }
   finally { busy = false; }
@@ -54,7 +55,7 @@ window.WEGYM_CLOUD = {
     try {
       const {error} = await client.from('workout_logs').delete().eq('user_id',user.id);
       if (error) throw error;
-      window.WEGYM_PROGRESS.setLog([]);
+      window.WEGYM_PROGRESS?.setLog([]);
       setStatus('Cloud workout history deleted.');
       return true;
     } catch(e) { setStatus(`Reset failed: ${e.message}`); return false; }
@@ -67,28 +68,29 @@ if (!enabled) {
   const {data:{session}} = await client.auth.getSession();
   user = session?.user || null;
   setControls();
-  if (user) await syncFromCloud();
-  else setStatus('Sign up or sign in to save workouts across devices.');
+  if (user) { await syncFromCloud(); if (form) { setStatus('Already signed in. Your account is connected.'); } }
+  else setStatus(form ? 'Sign in or create an account to sync your progress.' : 'Progress is saved on this browser. Sign in to sync across devices.');
   client.auth.onAuthStateChange((_event,session) => {
     const nextUser = session?.user || null;
     if (nextUser?.id !== user?.id) {
       user = nextUser;
       setControls();
       if (user) setTimeout(syncFromCloud,0);
-      else { window.WEGYM_PROGRESS.setLog([]); setStatus('Signed out. Sign in to load your cloud progress.'); }
+      else { window.WEGYM_PROGRESS?.setLog([]); setStatus('Signed out. Sign in to load your cloud progress.'); }
     }
   });
   form?.addEventListener('submit',async e => {
     e.preventDefault();
-    const {error} = await client.auth.signInWithPassword({email:email.value.trim(),password:password.value});
-    setStatus(error ? error.message : 'Signed in. Loading progress...');
+    const mode = form.dataset.mode;
+    const credentials = {email:email.value.trim(),password:password.value};
+    const {data,error} = mode === 'signup'
+      ? await client.auth.signUp(credentials)
+      : await client.auth.signInWithPassword(credentials);
     password.value = '';
-  });
-  signup?.addEventListener('click',async () => {
-    if (!email.value.trim() || !password.value) return setStatus('Enter email and password first.');
-    const {error} = await client.auth.signUp({email:email.value.trim(),password:password.value});
-    setStatus(error ? error.message : 'Account requested. Check your email for a confirmation link if required.');
-    password.value = '';
+    if (error) return setStatus(error.message);
+    if (mode === 'signup' && !data.session) return setStatus('Account created. Check your email to confirm your account, then sign in.');
+    setStatus('Success! Redirecting to workouts...');
+    window.location.href = 'workout-videos.html';
   });
   signout?.addEventListener('click',async () => {
     const {error} = await client.auth.signOut();
