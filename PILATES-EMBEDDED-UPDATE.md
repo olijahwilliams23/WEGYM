@@ -1,0 +1,1 @@
+Added embedded YouTube playback and thumbnails for The Roll Up, One Leg Circle, Rolling Like a Ball, Spine Stretch Forward, and Saw. Existing The Hundred and Glute Bridge embeds preserved. Remaining unmatched exercises retain search placeholders; not all durations or embed permissions have been independently confirmed. Do not claim complete video coverage.
