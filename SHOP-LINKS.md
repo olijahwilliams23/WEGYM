@@ -1,0 +1,1 @@
+Equipment and Supplements have separate pages with external retailer links. Links open in new tabs. Search pages may change; review periodically. No affiliate tracking is configured. Original WEGYM pages, ranks and deployment workflow preserved.
