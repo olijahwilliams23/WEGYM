@@ -1,0 +1,53 @@
+# Calisthenics video mapping
+
+49 exercise/video pairs provided by the project owner. Bear Crawls excluded by request. Video duration, public availability, thumbnail loading and embedding permission have **not** been live-verified.
+
+- Chest: Standard Push-Ups — https://youtube.com/shorts/SsBv26Ilrq8
+- Chest: Wide Push-Ups — https://youtube.com/shorts/J3vowCVjXEU
+- Chest: Diamond Push-Ups — https://youtube.com/shorts/-fTwCfbBMHc
+- Chest: Archer Push-Ups — https://youtube.com/shorts/HYlX-CLucQ8
+- Chest: Chest Dips — https://youtube.com/shorts/XUhA--3Iz2c
+- Chest: Decline Push-Ups — https://youtube.com/shorts/x3XztsyxHp4
+- Chest: Pseudo Planche Push-Ups — https://youtube.com/shorts/rxtf-Y0J15I
+- Chest: Explosive Push-Ups — https://youtube.com/shorts/VLKZxtn-Pt4
+- Back: Australian Pull-Ups — https://youtube.com/shorts/cxgsXHFxxW0
+- Back: Negative Pull-Ups — https://youtube.com/shorts/t3bmQdWTbA4
+- Back: Standard Pull-Ups — https://youtube.com/shorts/OEXosPwzFdc
+- Back: Chin-Ups — https://youtube.com/shorts/nTPkj5gnwb0
+- Back: Archer Pull-Ups — https://youtube.com/shorts/R_drd0U3knE
+- Back: Wide-Grip Pull-Ups — https://youtube.com/shorts/aAhPoq4ioqY
+- Back: Commando Pull-Ups — https://youtube.com/shorts/7wWIUidEp00
+- Back: Scapular Pull-Ups — https://youtube.com/shorts/WqCXcFrA1Iw
+- Shoulders: Pike Push-Ups — https://youtube.com/shorts/89-8waE2XKI
+- Shoulders: Elevated Pike Push-Ups — https://youtube.com/shorts/CGK3j1E5ki0
+- Shoulders: Wall Handstand Hold — https://youtube.com/shorts/LUBIjbCkmuA
+- Shoulders: Wall Handstand Push-Ups — https://youtube.com/shorts/38BhUZKZTTw
+- Shoulders: Freestanding Handstand Push-Ups — https://youtube.com/shorts/VCxTCPGPVIY
+- Shoulders: Planche Lean — https://youtube.com/shorts/s4_dcFZstSA
+- Arms: Bench Dips — https://youtube.com/shorts/4ua3MzaU0QU
+- Arms: Close-Grip Push-Ups — https://youtube.com/shorts/YvZH0Y3T1OI
+- Arms: Straight Bar Dips — https://youtube.com/shorts/ZPTonsxA7mk
+- Arms: Bodyweight Triceps Extensions — https://youtube.com/shorts/L8bfbBzp9NM
+- Arms: Bodyweight Biceps Curls on Rings — https://youtube.com/shorts/U-7f-3QqCjY
+- Arms: Ring Support Hold — https://youtube.com/shorts/TyVf6Wf3OeM
+- Core: Plank — https://youtube.com/shorts/m_znpbDTcxY
+- Core: Mountain Climbers — https://youtube.com/shorts/hZb6jTbCLeE
+- Core: Hanging Knee Raises — https://youtube.com/shorts/qazbsy9eU-M
+- Core: L-Sit Hold — https://youtube.com/shorts/xemT3-HS1qQ
+- Core: Toes-to-Bar — https://youtube.com/shorts/6A4kcDN0BZs
+- Core: Hollow Body Hold — https://youtube.com/shorts/VwxsZ48RUwc
+- Core: Dragon Flag — https://youtube.com/shorts/eLCBC6fjtQU
+- Core: Hanging Leg Raises — https://youtube.com/shorts/0wSUjj5j1xo
+- Legs: Bodyweight Squats — https://youtube.com/shorts/Qgpxx1Bxmgs
+- Legs: Reverse Lunges — https://youtube.com/shorts/3rzFW6b9nxQ
+- Legs: Bulgarian Split Squats — https://youtube.com/shorts/Cow3ESXmrTU
+- Legs: Pistol Squats — https://youtube.com/shorts/2qSwsTYEWuM
+- Legs: Jump Squats — https://youtube.com/shorts/K7d3OSJ6bqU
+- Legs: Cossack Squats — https://youtube.com/shorts/DAUb0U2RwPY
+- Legs: Single-Leg Calf Raises — https://youtube.com/shorts/K16PpiCAmU4
+- Legs: Nordic Hamstring Curls — https://youtube.com/shorts/MS_HQxYcpyI
+- Full Body: Burpees — https://youtube.com/shorts/zYBkodZ1SRU
+- Full Body: Muscle-Ups — https://youtube.com/shorts/uASGBouLpes
+- Full Body: Inchworm Walkouts — https://youtube.com/shorts/IwhxkfdFIvA
+- Full Body: Handstand Walks — https://youtube.com/shorts/-8RtYiGi70Y
+- Full Body: Tuck Front Lever Hold — https://youtube.com/shorts/Z95X59jteHk

@@ -532,3 +532,7 @@ footer {
 .shop-card p {flex:1;}
 .shop-link {display:inline-block;margin-top:auto;text-decoration:none;padding:10px 16px;font-size:.9rem;}
 .shop-disclaimer {max-width:1100px;margin:20px auto;padding:0 20px;font-size:.85rem;opacity:.8;}
+
+/* Calisthenics completion controls */
+.calisthenics-log-btn{margin-top:14px;padding:11px 16px;border:1px solid #f26b7e;border-radius:9px;background:#242429;color:#fff;font-weight:700;cursor:pointer}
+.calisthenics-log-btn[aria-pressed="true"]{background:#245b44;border-color:#51bb88}
